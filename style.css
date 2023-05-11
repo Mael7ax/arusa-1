@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 1200px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    header{
+
+        position: relative;
+    }
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+    }
+    .burger {
+
+        padding: 5px;
+    }
+    .burger span{
+        
+        display: block;
+        width: 27px;
+        height: 2px;
+        background: #fff;
+        margin: 5px 0;
+    }
+    .hero-vid{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+       margin: auto;
+        width: 100vw;
+        z-index: -100;
+        
+    }
+    .video{
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+   
+    }
+    .hero{
+        height: 95vh;
+        /* overflow: hidden; */
+        
+    }
+    .hero .container{
+        padding-top: 179px;
+        
+    }
+  
+    .hero-title{
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-size: 96px;
+        text-align: center;
+        font-weight: 100;
+
+    }
+    .hero-title span{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+    }
+    .hero-button{
+        background-color: #F8F4E7;
+        padding: 8px 36px;
+        border-radius: 8px;
+        margin: 48px auto;
+        display: block;
+    }
+
+
+
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .inner-block img{
+        width: 100%;
+    }
+    .inner-block{
+        border: solid;
+    }
+    
+    @media (max-width:1440px) {
+        .hero-title{
+            font-size: 96px;
+        }
+        .hero-vid{
+            width: 140vw;
+            
+        }
+
+    }
+    @media (max-width:1024px) {
+        .hero-title{
+            font-size: 85px;
+            
+        }
+        .hero-vid{
+            width: 170vw;
+            
+        }
+    }
+    @media  (max-width:768px) {
+        .hero-title{
+            font-size: 65px;
+        }
+        .hero-vid{
+            width: 240vw;
+              
+        }
+        .block{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .inner-block{
+            width: 50%;
+        }
+    }
+
+   
